@@ -13,7 +13,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     //  private UserService userService;
-
+    // Checking changes
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody UserEntity user) {
         userService.saveUser(user);
